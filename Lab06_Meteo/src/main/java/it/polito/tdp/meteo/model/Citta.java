@@ -47,6 +47,18 @@ public class Citta {
 	public void increaseCounter() {
 		this.counter += 1;
 	}
+	
+	public void decreaseCounter() {
+		this.counter -= 1;
+	}
+	
+	
+	
+	public int getUmiditaDiQuestoGiorno(int giorno) {
+	return	this.rilevamenti.get(giorno).getUmidita();
+	
+	//qui passo ad es. livello 0 e ottengo ciò che si trova in pos. 0, ovvero il primo giorno del mese
+	}
 
 	@Override
 	public int hashCode() {
